@@ -1,0 +1,12 @@
+<?php
+require_once("src/rest_api/definitions.class.php");
+require_once("src/rest_api/interfaces.php");
+require_once("src/rest_api/factory.class.php");
+require_once("src/rest_api/response.class.php");
+require_once("src/rest_api/dispatcher.class.php");
+require_once("src/rest_api/config.class.php");
+require_once("src/rest_api/resource.class.php");
+require_once("src/rest_api/exception.class.php");
+require_once("src/rest_api/headers.class.php");
+require_once("src/rest_api/functions.php");
+?>

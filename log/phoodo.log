@@ -1,0 +1,159 @@
+Input string was not json: 
+THAT WAS A FATAL ERROR. THIS IS dispatcher FILE
+[17-12-01 01:56:47] : Input string was not json: 
+THAT WAS A FATAL ERROR. THIS IS dispatcher FILE
+[17-12-01 02:02:21] : A required field (verification_code) is missing
+THAT WAS A FATAL ERROR. THIS IS dispatcher FILE
+[17-12-01 02:06:53] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+[17-12-01 02:08:20] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+[17-12-01 02:27:49] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+[17-12-01 02:28:23] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+[17-12-01 02:28:42] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+[17-12-01 02:29:04] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+[17-12-01 02:29:33] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+[17-12-01 02:29:52] : TRY TO CALL CUSTOM[17-12-01 02:29:52] : CUSTOM DID NOT CALL[17-12-01 02:29:52] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+[17-12-01 02:30:12] : TRY TO CALL CUSTOM
+[17-12-01 02:30:12] : CUSTOM DID NOT CALL
+[17-12-01 02:30:12] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:30:52] : TRY TO CALL CUSTOM
+[17-12-01 02:30:52] : CUSTOM DID NOT CALL
+[17-12-01 02:30:52] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:31:11] : TRY TO CALL CUSTOM
+[17-12-01 02:31:11] : CALLABLE
+[17-12-01 02:31:11] : CUSTOM DID NOT CALL
+[17-12-01 02:31:11] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:32:28] : TRY TO CALL CUSTOM
+[17-12-01 02:34:00] : TRY TO CALL CUSTOM
+[17-12-01 02:35:32] : TRY TO CALL CUSTOM
+[17-12-01 02:35:32] : CALLABLE
+[17-12-01 02:35:43] : TRY TO CALL CUSTOM
+[17-12-01 02:35:43] : CALLABLE
+[17-12-01 02:35:43] : CUSTOM DID NOT CALL
+[17-12-01 02:35:43] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:37:59] : CALLABLE
+[17-12-01 02:37:59] : CUSTOM DID NOT CALL
+[17-12-01 02:37:59] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:38:20] : CALLABLE
+[17-12-01 02:38:20] : CUSTOM DID NOT CALL
+[17-12-01 02:38:20] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:38:43] : CALLABLE
+[17-12-01 02:38:43] : CUSTOM DID NOT CALL
+[17-12-01 02:38:43] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:39:53] : CALLABLE
+[17-12-01 02:39:53] : CUSTOM DID NOT CALL
+[17-12-01 02:39:53] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:39:57] : CALLABLE
+[17-12-01 02:39:57] : CUSTOM DID NOT CALL
+[17-12-01 02:39:57] : Invalid user 400
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:40:18] : CALLABLE
+[17-12-01 02:40:38] : CALLABLE
+[17-12-01 02:40:55] : CALLABLE
+[17-12-01 02:41:15] : CALLABLE
+[17-12-01 02:41:32] : CALLABLE
+[17-12-01 02:41:32] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[17-12-01 02:42:13] : User already verified 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[17-12-01 02:42:43] : A required field (pass) is missing
+THAT WAS A API EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 02:42:51] : Invalid user-pass pair 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[17-12-01 04:45:27] : token not present 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 04:45:43] : token not present 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 04:46:23] : token not present 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 04:51:02] : token not present or malformed 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 04:51:19] : token not present or malformed 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 04:52:23] : Invalid or expired token 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 04:54:02] : Invalid or expired token 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 04:56:38] : Invalid or expired token 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 04:57:02] : Invalid or expired token 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 04:57:06] : Invalid or expired token 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 05:06:14] : Unverified user 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 05:09:50] : contenido_bbdd_dinamico: Unretrievable data with id 0
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 05:12:32] : Token does not represent an user 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 05:18:11] : Unknown column 'borrado_logico' in 'field list' en UPDATE phoodo_user SET borrado_logico='1' WHERE user_id='4' 
+THAT WAS A MYSQL ERROR. THIS IS dispatcher FILE
+
+[17-12-01 05:28:37] : A required field (verification_code) is missing
+THAT WAS A API EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 05:28:57] : The resource does not return the proper type
+THAT WAS A API EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 05:31:41] : Invalid or expired token 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 05:34:38] : User already verified 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 05:34:59] : Invalid or expired token 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 05:38:55] : Invalid or expired token 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 05:39:14] : A required field (email) is missing
+THAT WAS A API EXCEPTION. THIS IS dispatcher FILE
+
+[17-12-01 05:41:14] : Invalid user-pass pair 400
+THAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE
+
+[17-12-01 05:49:33] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET valid_until=NOW()+INTERVAL 30 MINUTE WHERE token='33a7f3f9824ded8eead5347457' at line 1 en UPDATE SET valid_until=NOW()+INTERVAL 30 MINUTE WHERE token='33a7f3f9824ded8eead53474573ddf8e' 
+THAT WAS A MYSQL ERROR. THIS IS dispatcher FILE
+

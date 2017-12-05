@@ -1,0 +1,170 @@
+user
+	POST	
+		description: creates a new user.
+		prerequisites: email is not in use.
+		aftermath: a non verified user is created and a verification email is sent.
+
+		in:	{email, pass}
+		out:	{user_id}
+
+	PUT
+		description: updates user data
+		prerequisites: user is verified and a valid token is provided.
+		aftermath: provided user data is updated
+
+		header:	token
+		in:	{pass}
+		out:	{result}
+
+	DELETE
+		description:
+		prerequisites: user is verified and a valid token is provided.
+		aftermath: user and all user tokens are deleted.
+
+		header:	token
+		in:	{user_id}
+		out:	{result}
+
+	GET
+		description: returns public user information
+		prerequisites: user is verified and a valid token is provided.
+		aftermath: no changes are made to the user object
+
+		header:	token
+		in
+		out	{email, created_on, user_id}
+
+user_verify
+	POST	
+		description: performs user email verification.
+		prerequisites: the user exists, is unverified and the verification code is correct.
+		aftermath: the user becomes verified and ready to use.
+
+		in:	{email, verification_code}
+		out:	{result}
+
+user_login
+	POST
+		description: creates a user token.
+		prerequisites: the user exists, is verified and the provided pass is correct.
+		aftermath: a new user token is created. The token is valid for 30 minutes.
+
+		in:	{email, pass}
+		out:	{token, user_id}
+
+--------------------------------------------------------------------------------
+
+category
+x	POST
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in:	{name}
+		out:	{category_id}
+
+x	PUT
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in:	{category_id, name}
+		out:	{}
+
+x	DELETE
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in:	{category_id}
+		out:	{}
+
+x	GET
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in?	&id=
+		out:	{name, category_id}
+
+dish
+x	POST
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in:	{category_id, name, description}
+		out:	{dish_id}
+
+x	PUT
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in:	{dish_id, category_id, name, description}
+		out:	{}
+
+x	DELETE
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in:	{dish_id}
+		out:	{}
+
+x	GET
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in?	&id=
+		out:	{category_id, name, description}
+
+dish_step
+x	POST
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in:	{dish_id, description}
+		out:	{dish_step_id}
+
+x	PUT
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in:	{dish_step_id, description}
+		out:	{}
+
+x	DELETE
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in:	{dish_step_id}
+		out:	{}
+
+x	GET
+		description:
+		prerequisites:
+		aftermath: 
+
+		header:	token
+		in?	&dish_step_id=
+		out:	{description}
+
+TODO: HOW TO GET LIST OF CATEGORIES
+TODO: HOW TO GET LIST OF ALL DISHES FOR A CATEGORY
+TODO: HOW TO GET LIST OF ALL STEPS FOR A DISH
