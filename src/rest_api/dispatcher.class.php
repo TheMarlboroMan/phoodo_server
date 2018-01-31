@@ -28,21 +28,22 @@ class Dispatcher
 				case 'put':
 				case 'delete':
 					$interface="\\Rest_api\\Api_".$request_method;
-				break;
+					if(!$api_resource instanceof $interface)
+					{
+						throw new Api_exception("Resource method ".$request_method." does not exist", Definitions::STATUS_CODE_METHOD_NOT_ALLOWED, "The resource does not implement the interface");
+					}
 
+					$result=$api_resource->$request_method($request_input, $request_headers, $request_get);
+					if(!$result instanceof Response) throw new Api_exception("Illegal resource return type", Definitions::STATUS_CODE_INTERNAL_SERVER_ERROR, "The resource does not return the proper type");
+					return $result;
+				break;
+				case 'options':
+					return new CorsResponse();
+				break;
 				default:
-					throw new Api_exception("Unsupported http verb", Definitions::STATUS_CODE_METHOD_NOT_ALLOWED, "The requested verb is not supported by the api");
+					throw new Api_exception("Unsupported http verb", Definitions::STATUS_CODE_METHOD_NOT_ALLOWED, "The requested verb '".$request_method."' is not supported by the api");
 				break;
 			}
-
-			if(!$api_resource instanceof $interface)
-			{
-				throw new Api_exception("Resource method ".$request_method." does not exist", Definitions::STATUS_CODE_METHOD_NOT_ALLOWED, "The resource does not implement the interface");
-			}
-
-			$result=$api_resource->$request_method($request_input, $request_headers, $request_get);
-			if(!$result instanceof Response) throw new Api_exception("Illegal resource return type", Definitions::STATUS_CODE_INTERNAL_SERVER_ERROR, "The resource does not return the proper type");
-			return $result;
 		}
 		catch(\Excepcion_consulta_mysql $e) {
 			do_log($e->getMessage()."\nTHAT WAS A MYSQL ERROR. THIS IS dispatcher FILE\n");

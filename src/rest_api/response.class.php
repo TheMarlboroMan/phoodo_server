@@ -16,9 +16,10 @@ class Response
 
 	public function	resolve_response()
 	{
-		http_response_code($this->code);
-		header('Content-type: '.$this->content_type.'; charset=UTF-8;');
+		//TODO... Actually, this is not good...
 		header('Access-Control-Allow-Origin: *');
+		header('Content-type: '.$this->content_type.'; charset=UTF-8;');
+		http_response_code($this->code);
 		die($this->body);
 	}
 
@@ -26,5 +27,18 @@ class Response
 	{
 		$response=['error_description' => $e->getMessage(), 'http_status_code' => $e->getCode()];
 		return new Response(json_encode($response), $e->getCode(), Definitions::TYPE_JSON);
+	}
+};
+
+class CorsResponse extends Response {
+
+	public function __construct($_b, $_c, $_ct=Definitions::TYPE_JSON) {
+		parent::__construct($_b, $_c, $_ct);
+	}
+
+	public function resolve_response() {
+		header('Allow: OPTIONS, GET, PUT, POST, DELETE');
+		header('Access-Control-Allow-Headers: Content-Type');
+		parent::resolve_response();
 	}
 };

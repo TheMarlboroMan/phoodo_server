@@ -30,6 +30,8 @@ $request_method=strtolower($_SERVER['REQUEST_METHOD']);
 
 try
 {
+	//TODO: LOG EVERYTHING!!!!
+
 	$config=new \Rest_api\Config("src/phoodo/api/", "\\Phoodo\\");
 	$api_resource=$api_factory->get_resource($request_type, $config);
 
