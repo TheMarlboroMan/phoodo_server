@@ -14,7 +14,7 @@ $ex_handler=function($e) {
 	switch(get_class($e))
 	{
 		case 'Phoodo\App_exception':
-			do_log($e->getMessage()." ".$e->getCode()."\nTHAT WAS AN APP_EXCEPTION. THIS IS app_functions.php FILE\n");
+			do_log($e->getMessage()." ".$e->getCode()."\nTHAT WAS AN APP_EXCEPTION. THIS IS api.php FILE\n");
 			throw new \Exception($e->getMessage(), $e->getCode());
 		break;
 	}
@@ -38,7 +38,6 @@ try
 
 	//Load application specific functions and modules.
 	require_once("src/phoodo/autoload.php");
-	
 
 	//TODO: Load when required..
 	require_once("src/phoodo/model/user.class.php");

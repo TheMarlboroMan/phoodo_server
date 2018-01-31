@@ -7,6 +7,10 @@ namespace Phoodo;
 }
 */
 
+function database_connect() {
+	\Consulta_mysql::conectar(\Constantes_bbdd_phoodo::BBDD_HOST, \Constantes_bbdd_phoodo::BBDD_USER, \Constantes_bbdd_phoodo::BBDD_PASS, \Constantes_bbdd_phoodo::BBDD_BASE_DATOS);
+}
+
 function get_and_refresh_token_from_headers(\Rest_api\Request_headers $headers)
 {
 	if(!$headers->exists("token"))

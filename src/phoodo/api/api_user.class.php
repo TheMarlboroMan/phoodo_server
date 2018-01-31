@@ -5,6 +5,8 @@ class Api_user extends \Rest_api\Resource implements \Rest_api\Api_post, \Rest_a
 {
 	public function post($_input, \Rest_api\Request_headers $headers, array $get)
 	{
+		database_connect();
+
 		$input=\Rest_api\json_input_parse($_input, ['email', 'pass']);
 
 		if(User::get_by_email($input['email']))
@@ -23,6 +25,8 @@ class Api_user extends \Rest_api\Resource implements \Rest_api\Api_post, \Rest_a
 
 	public function delete($_input, \Rest_api\Request_headers $headers, array $get)
 	{
+		database_connect();
+
 		$token=get_and_refresh_token_from_headers($headers);
 		$user=get_verified_user_from_token($token);
 		$user->delete();
@@ -34,6 +38,8 @@ class Api_user extends \Rest_api\Resource implements \Rest_api\Api_post, \Rest_a
 
 	public function get($_input, \Rest_api\Request_headers $headers, array $get)
 	{
+		database_connect();
+
 		$token=get_and_refresh_token_from_headers($headers);
 		$user=get_verified_user_from_token($token);
 		return new \Rest_api\Response(json_encode(User::get_public_data($user)), \Rest_api\Definitions::STATUS_CODE_OK);
@@ -41,6 +47,8 @@ class Api_user extends \Rest_api\Resource implements \Rest_api\Api_post, \Rest_a
 
 	public function put($_input, \Rest_api\Request_headers $headers, array $get)
 	{
+		database_connect();
+
 		$input=\Rest_api\json_input_parse($_input, ['pass'] /*[]*/); //There are no optional parameters.
 
 		$token=get_and_refresh_token_from_headers($headers);

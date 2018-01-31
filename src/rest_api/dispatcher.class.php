@@ -44,20 +44,17 @@ class Dispatcher
 			if(!$result instanceof Response) throw new Api_exception("Illegal resource return type", Definitions::STATUS_CODE_INTERNAL_SERVER_ERROR, "The resource does not return the proper type");
 			return $result;
 		}
-		catch(\Excepcion_consulta_mysql $e)
-		{
+		catch(\Excepcion_consulta_mysql $e) {
 			do_log($e->getMessage()."\nTHAT WAS A MYSQL ERROR. THIS IS dispatcher FILE\n");
 			throw new \Exception(\Rest_api\Definitions::MESSAGE_DATABASE_ERROR, \Rest_api\Definitions::STATUS_CODE_INTERNAL_SERVER_ERROR);
 		}
-		catch(Api_exception $e)
-		{
+		catch(Api_exception $e)	{
 			do_log($e->get_log_info()."\nTHAT WAS A API EXCEPTION. THIS IS dispatcher FILE\n");
 			throw new \Exception($e->getMessage(), $e->getCode());
 		}
-		catch(\Exception $e)
-		{
-			if($this->custom_exception_handler) 
-			{
+		catch(\Exception $e) {
+			
+			if($this->custom_exception_handler) {
 				$this->custom_exception_handler->__invoke($e);
 			}
 
