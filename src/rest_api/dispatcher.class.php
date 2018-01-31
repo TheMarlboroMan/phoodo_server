@@ -38,6 +38,7 @@ class Dispatcher
 					return $result;
 				break;
 				case 'options':
+					//TODO: This should be configurable in an application basis, so we should pass some params.
 					return new CorsResponse();
 				break;
 				default:

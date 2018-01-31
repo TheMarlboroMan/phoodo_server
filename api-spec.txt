@@ -5,7 +5,8 @@ user
 		aftermath: a non verified user is created and a verification email is sent.
 
 		in:	{email, pass}
-		out:	{user_id}
+		out:	200:{user_id}
+		errors: 409:{} (when email is in use).
 
 	PUT
 		description: updates user data

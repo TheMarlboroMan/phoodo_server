@@ -223,3 +223,79 @@ THAT WAS A MYSQL ERROR. THIS IS dispatcher FILE
 [18-01-31 04:54:53] : No se puede establecer conexion con la base de datos
 THAT WAS A MYSQL ERROR. THIS IS dispatcher FILE
 
+[18-01-31 04:56:21] : A required field (email) is missing
+THAT WAS A API EXCEPTION. THIS IS dispatcher FILE
+
+[18-01-31 05:00:19] : requesting options:/phoodo/api/user
+[18-01-31 05:00:19] : requesting post:/phoodo/api/user
+[18-01-31 05:02:54] : requesting options:/phoodo/api/user with []
+[18-01-31 05:02:54] : requesting post:/phoodo/api/user with [{"email":"","pass":""}]
+[18-01-31 05:02:54] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-01-31 05:05:40] : requesting options:/phoodo/api/user with []
+[18-01-31 05:05:40] : requesting post:/phoodo/api/user with [{"email":"","pass":""}]
+[18-01-31 05:05:40] : A required field (email) is missing
+THAT WAS A API EXCEPTION. THIS IS dispatcher FILE
+
+[18-01-31 05:07:15] : requesting options:/phoodo/api/user with []
+[18-01-31 05:07:15] : requesting post:/phoodo/api/user with [{"email":"dani@dani.com","pass":"LOLOLOL"}]
+[18-01-31 05:07:15] : A required field (email) is missing or has no value
+THAT WAS A API EXCEPTION. THIS IS dispatcher FILE
+
+[18-01-31 05:07:33] : requesting options:/phoodo/api/user with []
+[18-01-31 05:07:33] : requesting post:/phoodo/api/user with [{"email":"dani@dani.com","pass":"LOLOLOL"}]
+[18-01-31 05:07:33] : A required field (email) is missing or has no value
+THAT WAS A API EXCEPTION. THIS IS dispatcher FILE
+
+[18-01-31 05:08:26] : requesting options:/phoodo/api/user with []
+[18-01-31 05:08:26] : requesting post:/phoodo/api/user with [{"email":"dani@dani.com","pass":"LOLOLOL"}]
+[18-01-31 05:18:43] : requesting options:/phoodo/api/user with []
+[18-01-31 05:18:43] : requesting post:/phoodo/api/user with [{"email":"dani@dani3.com","pass":"LOLOLOL"}]
+[18-01-31 05:19:38] : requesting options:/phoodo/api/user with []
+[18-01-31 05:19:38] : requesting post:/phoodo/api/user with [{"email":"dani@dani4.com","pass":"LOLOLOL"}]
+[18-01-31 05:22:14] : requesting options:/phoodo/api/user with []
+[18-01-31 05:22:14] : requesting post:/phoodo/api/user with [{"email":"dani@dani4.com","pass":"LOLOLOL"}]
+[18-01-31 05:22:14] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-01-31 05:22:50] : requesting options:/phoodo/api/user with []
+[18-01-31 05:22:50] : requesting post:/phoodo/api/user with [{"email":"dani@dani10.com","pass":"LOLOLOL"}]
+[18-01-31 05:28:28] : requesting options:/phoodo/api/user with []
+[18-01-31 05:28:28] : requesting post:/phoodo/api/user with [{"email":"dani@dani11.com","pass":"LOLOLOL"}]
+[18-01-31 05:29:59] : requesting options:/phoodo/api/user with []
+[18-01-31 05:29:59] : requesting post:/phoodo/api/user with [{"email":"dani@dani12.com","pass":"LOLOLOL"}]
+[18-01-31 05:30:16] : requesting options:/phoodo/api/user with []
+[18-01-31 05:30:16] : requesting post:/phoodo/api/user with [{"email":"dani@dani12.com","pass":"LOLOLOL"}]
+[18-01-31 05:30:16] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-01-31 05:32:46] : requesting options:/phoodo/api/user with []
+[18-01-31 05:32:46] : requesting post:/phoodo/api/user with [{"email":"dani@dani12.com","pass":"LOLOLOL"}]
+[18-01-31 05:32:46] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-01-31 05:38:26] : requesting options:/phoodo/api/user with []
+[18-01-31 05:38:26] : requesting post:/phoodo/api/user with [{"email":"dani@dani12.com","pass":"LOLOLOL"}]
+[18-01-31 05:38:26] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-01-31 05:51:36] : requesting options:/phoodo/api/user with []
+[18-01-31 05:51:36] : requesting post:/phoodo/api/user with [{"email":"dani@dani12.com","pass":"LOLOLOL"}]
+[18-01-31 05:51:36] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-01-31 05:51:39] : requesting options:/phoodo/api/user with []
+[18-01-31 05:51:40] : requesting post:/phoodo/api/user with [{"email":"dani@dani12.com","pass":"LOLOLOL"}]
+[18-01-31 05:51:40] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-01-31 05:52:23] : requesting options:/phoodo/api/user with []
+[18-01-31 05:52:23] : requesting post:/phoodo/api/user with [{"email":"dani@dani10.com","pass":"1234"}]
+[18-01-31 05:52:24] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-01-31 05:52:28] : requesting options:/phoodo/api/user with []
+[18-01-31 05:52:28] : requesting post:/phoodo/api/user with [{"email":"dani@dani101.com","pass":"1234"}]
+[18-01-31 06:02:35] : requesting options:/phoodo/api/user with []
+[18-01-31 06:02:36] : requesting post:/phoodo/api/user with [{"email":"dani101@dani101.com","pass":"1234"}]

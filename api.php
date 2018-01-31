@@ -30,7 +30,15 @@ $request_method=strtolower($_SERVER['REQUEST_METHOD']);
 
 try
 {
-	//TODO: LOG EVERYTHING!!!!
+	//TODO: Check content-type of request input???
+	$request_input=file_get_contents("php://input");
+
+	//TODO: Better to get the raw query string?.
+	$request_get=$_GET;
+	$request_headers=new\Rest_api\Request_headers();
+
+	//TODO: LOG EVERYTHING, INCLUDING GET AND HEADERS...!!!!
+	do_log("requesting ".$request_method.":".$_SERVER['REQUEST_URI']." with [".$request_input."]");
 
 	$config=new \Rest_api\Config("src/phoodo/api/", "\\Phoodo\\");
 	$api_resource=$api_factory->get_resource($request_type, $config);
@@ -46,14 +54,6 @@ try
 	require_once("src/phoodo/model/user.sql.php");
 	require_once("src/phoodo/model/user_token.class.php");
 	require_once("src/phoodo/model/user_token.sql.php");
-
-	$request_input=file_get_contents("php://input");
-
-	//TODO: Check content-type of request input???
-
-	//TODO: Better to get the raw query string?.
-	$request_get=$_GET;
-	$request_headers=new\Rest_api\Request_headers();
 
 	$dispatcher=new \Rest_api\Dispatcher($ex_handler);
 	$dispatcher->dispatch($request_method, $api_resource, $request_input, $request_headers, $request_get)->resolve_response();

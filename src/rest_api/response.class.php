@@ -16,7 +16,7 @@ class Response
 
 	public function	resolve_response()
 	{
-		//TODO... Actually, this is not good...
+		//TODO... Actually, this is not good... This should be configurable.
 		header('Access-Control-Allow-Origin: *');
 		header('Content-type: '.$this->content_type.'; charset=UTF-8;');
 		http_response_code($this->code);
