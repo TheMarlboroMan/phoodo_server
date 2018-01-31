@@ -63,4 +63,3 @@ catch(\Exception $e)
 }
 
 //curl -X POST|GET|PUT|DELETE "http://localhost/phoodo/api/shit?hola=1&cosa=2" -H "Content-type: text/plain" -d "Hello fuckers"
-?>

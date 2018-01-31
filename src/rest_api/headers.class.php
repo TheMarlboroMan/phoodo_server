@@ -28,4 +28,3 @@ class Request_headers
 		return array_key_exists($key, $this->headers);
 	}
 };
-?>

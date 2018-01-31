@@ -18,4 +18,3 @@ class Definitions
 
 	const	TYPE_JSON="text/json";
 };
-?>

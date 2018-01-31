@@ -20,4 +20,3 @@ function json_input_parse($input, array $required_fields, array $optional_fields
 
 	return $result;
 }
-?>

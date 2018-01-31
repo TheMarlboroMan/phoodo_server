@@ -35,5 +35,4 @@ class User_sql extends \Base_textos_sql
 	{
 		return $this->obtener_publico("AND email='".$email."'");
 	}
-}
-?>
+};

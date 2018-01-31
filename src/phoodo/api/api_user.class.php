@@ -50,4 +50,3 @@ class Api_user extends \Rest_api\Resource implements \Rest_api\Api_post, \Rest_a
 		return new \Rest_api\Response(json_encode(["result" => 1]), \Rest_api\Definitions::STATUS_CODE_OK);
 	}
 };
-?>

@@ -47,5 +47,4 @@ WHERE user_id='".$id."'";
 SET valid_until=NOW()+INTERVAL 30 MINUTE
 WHERE token='".$token."'";
 	}
-}
-?>
+};

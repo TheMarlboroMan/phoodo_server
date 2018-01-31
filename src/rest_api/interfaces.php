@@ -24,5 +24,4 @@ interface Api_put
 interface Api_delete
 {
 	public function delete($input, Request_headers $headers, array $get);
-}
-?>
+};

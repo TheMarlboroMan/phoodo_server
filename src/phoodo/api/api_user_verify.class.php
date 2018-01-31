@@ -33,4 +33,3 @@ class Api_user_verify extends \Rest_api\Resource implements \Rest_api\Api_post
 		return new \Rest_api\Response(json_encode(["result" => 1]), \Rest_api\Definitions::STATUS_CODE_OK);
 	}
 };
-?>

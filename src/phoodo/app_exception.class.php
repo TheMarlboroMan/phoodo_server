@@ -1,4 +1,4 @@
-<?
+<?php
 namespace Phoodo;
 
 class App_exception extends \Exception
@@ -8,4 +8,3 @@ class App_exception extends \Exception
 		parent::__construct($message, $code, $previous);
 	}
 };
-?>

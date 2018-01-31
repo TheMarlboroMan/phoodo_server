@@ -27,5 +27,4 @@ class Response
 		$response=['error_description' => $e->getMessage(), 'http_status_code' => $e->getCode()];
 		return new Response(json_encode($response), $e->getCode(), Definitions::TYPE_JSON);
 	}
-}
-?>
+};

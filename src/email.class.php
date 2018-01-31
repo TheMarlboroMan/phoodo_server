@@ -82,7 +82,7 @@ MAQUETACION;
 		$this->establecer_html_titulo('Verify your account!');
 		$this->establecer_html_destacado('We need you to activate your account!');
 		$this->establecer_html_texto('Please, use the activation code '.$user->get_verification_code());
-		$this->establecer_texto_plano("You need a proper");
+		$this->establecer_texto_plano("You need a proper email reader man!");
 //		$this->establecer_origen('dani', 'caballorenoir.net');
 		$this->establecer_asunto('Phoodo - Verify your account!');
 		$this->establecer_destinatario($user->get_email());
@@ -91,4 +91,3 @@ MAQUETACION;
 		$this->enviar();
 	}
 }
-?>

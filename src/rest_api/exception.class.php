@@ -1,4 +1,4 @@
-<?
+<?php
 namespace Rest_api;
 
 //Specific exception to troubleshoot internals.
@@ -15,4 +15,3 @@ class Api_exception extends \Exception
 		$this->log_info=$_li;
 	}
 };
-?>

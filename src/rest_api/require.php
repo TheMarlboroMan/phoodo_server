@@ -9,4 +9,3 @@ require_once("src/rest_api/resource.class.php");
 require_once("src/rest_api/exception.class.php");
 require_once("src/rest_api/headers.class.php");
 require_once("src/rest_api/functions.php");
-?>

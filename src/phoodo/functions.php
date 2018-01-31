@@ -43,4 +43,3 @@ function get_verified_user_from_token(User_token $token)
 
 	return $user;
 }
-?>

@@ -90,5 +90,4 @@ class User extends \Contenido_bbdd
 			'email' => $user->email,
 			'created_on' => $user->created_on];
 	}
-}
-?>
+};

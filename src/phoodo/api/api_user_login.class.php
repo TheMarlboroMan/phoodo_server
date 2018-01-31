@@ -31,4 +31,3 @@ class Api_user_login extends \Rest_api\Resource implements \Rest_api\Api_post
 		return new \Rest_api\Response(json_encode($result), \Rest_api\Definitions::STATUS_CODE_OK);
 	}
 };
-?>

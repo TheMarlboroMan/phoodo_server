@@ -70,5 +70,4 @@ class User_token extends \Contenido_bbdd
 		$query=new \Consulta_mysql();
 		$query->consultar($sql->delete_by_user($user->get_user_id()));
 	}
-}
-?>
+};

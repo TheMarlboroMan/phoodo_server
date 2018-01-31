@@ -23,5 +23,4 @@ class Factory
 
 		return new $classname;
 	}
-}
-?>
+};

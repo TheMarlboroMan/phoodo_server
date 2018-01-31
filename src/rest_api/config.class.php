@@ -21,5 +21,4 @@ class Config
 		$this->file_extension=$_e;
 		$this->file_prefix=$_fp;
 	}
-}
-?>
+};
