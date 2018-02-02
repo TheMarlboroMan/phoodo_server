@@ -1,15 +1,32 @@
 <?php
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 
 //TODO: Careful where we move this, with namespace names...
-function do_log($text)
-{
-	$file=fopen("log/phoodo.log", "a");
+function do_log($text) {
+
+	//TODO: This needs to be configured....
+	$file=fopen("/opt/lampp/htdocs/phoodo/log/phoodo.log", "a");
 	fwrite($file, "[".date("y-m-d h:i:s")."] : ".$text."\n");
 	fclose($file);
 }
 
-//TODO: Careful where we move this, with namespace names...
+set_error_handler(function ($err_severity, $err_msg, $err_file, $err_line, array $err_context) {
+	if($err_severity!==E_DEPRECATED) 
+		throw new Exception("Api error handler (".$err_severity."): ".$err_msg.' ['.$err_file.':'.$err_line.']', $err_severity);
+});
+
+register_shutdown_function(function () {
+	$error=error_get_last();
+	if($error['type']===E_ERROR) {
+		//TODO: 500??... As in a magic number?
+		http_response_code(500);
+		$msg='Something terrible happened in '.$error['file'].' '.$error['line'].' : '.$error['message'];
+		do_log($msg);
+		die();
+	}
+});
+
+//TODO: This is supposed to be user-dependant.
 $ex_handler=function($e) {
 	switch(get_class($e))
 	{
@@ -28,8 +45,7 @@ $api_factory=new \Rest_api\Factory();
 $request_type=isset($_GET['type']) ? strtolower($_GET['type']) : null;
 $request_method=strtolower($_SERVER['REQUEST_METHOD']);
 
-try
-{
+try{
 	//TODO: Check content-type of request input???
 	$request_input=file_get_contents("php://input");
 
@@ -58,8 +74,7 @@ try
 	$dispatcher=new \Rest_api\Dispatcher($ex_handler);
 	$dispatcher->dispatch($request_method, $api_resource, $request_input, $request_headers, $request_get)->resolve_response();
 }
-catch(\Exception $e)
-{
+catch(\Exception $e){
 	\Rest_api\Response::get_error_response($e)->resolve_response();
 }
 

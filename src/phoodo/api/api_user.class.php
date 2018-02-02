@@ -18,7 +18,8 @@ class Api_user extends \Rest_api\Resource implements \Rest_api\Api_post, \Rest_a
 		$user->create($input);
 
 		$email=new Email();
-		$email->send_validation_email($user);
+		$email->build_validation_email($user);
+		$email->send();
 
 		return new \Rest_api\Response(json_encode(["user_id" => $user->get_user_id()]), \Rest_api\Definitions::STATUS_CODE_OK);
 	}	

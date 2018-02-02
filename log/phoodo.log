@@ -299,3 +299,254 @@ THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
 [18-01-31 05:52:28] : requesting post:/phoodo/api/user with [{"email":"dani@dani101.com","pass":"1234"}]
 [18-01-31 06:02:35] : requesting options:/phoodo/api/user with []
 [18-01-31 06:02:36] : requesting post:/phoodo/api/user with [{"email":"dani101@dani101.com","pass":"1234"}]
+[18-01-31 11:58:36] : requesting options:/phoodo/api/user with []
+[18-01-31 11:58:36] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:05:05] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:05:05] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:05:06] : No database selected en SELECT * FROM phoodo_user WHERE TRUE AND email='dani@gmail.com' ORDER BY email ASC 
+THAT WAS A MYSQL ERROR. THIS IS dispatcher FILE
+
+[18-02-02 10:05:46] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:05:46] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:05:46] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:06:38] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:06:38] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:06:38] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:06:56] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:06:56] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:06:56] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:09:01] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:09:01] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:09:01] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:09:13] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:09:13] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:09:13] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:09:53] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:09:53] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:09:53] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:10:29] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:10:29] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:10:29] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:25:18] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:25:18] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:25:18] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:26:03] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:26:03] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:26:03] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:26:09] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:26:09] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:26:09] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:27:10] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:27:10] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:27:10] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:27:39] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:27:39] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:27:39] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:28:10] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:28:10] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:28:10] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:28:47] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:28:47] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:28:47] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:29:05] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:29:05] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:29:05] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:29:20] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:29:20] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:29:20] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:29:34] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 10:29:34] : requesting post:/phoodo/api/user_verify with [{"email":"dani@gmail.com","verification_code":"adw49090adas"}]
+[18-02-02 10:29:34] : Invalid user 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:35:25] : requesting options:/phoodo/api/user with []
+[18-02-02 10:35:25] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:39:15] : requesting options:/phoodo/api/user with []
+[18-02-02 10:39:15] : Missing argument 1 for Rest_api\CorsResponse::__construct(), called in /opt/lampp/htdocs/phoodo/src/rest_api/dispatcher.class.php on line 42 and defined [/opt/lampp/htdocs/phoodo/src/rest_api/response.class.php:35] 2
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[18-02-02 10:49:18] : requesting options:/phoodo/api/user with []
+[18-02-02 10:49:18] : Api error handler: Missing argument 1 for Rest_api\CorsResponse::__construct(), called in /opt/lampp/htdocs/phoodo/src/rest_api/dispatcher.class.php on line 42 and defined [/opt/lampp/htdocs/phoodo/src/rest_api/response.class.php:35] 2
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[18-02-02 10:50:06] : requesting options:/phoodo/api/user with []
+[18-02-02 10:50:48] : requesting options:/phoodo/api/user with []
+[18-02-02 10:50:48] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:50:48] : Api error handler: mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead [/opt/lampp/htdocs/renoir_engine/class_motor/consulta_mysql.class.php:22] 8192
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[18-02-02 10:52:59] : requesting options:/phoodo/api/user with []
+[18-02-02 10:52:59] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:52:59] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:53:16] : requesting options:/phoodo/api/user with []
+[18-02-02 10:53:16] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:54:27] : requesting options:/phoodo/api/user with []
+[18-02-02 10:54:27] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:54:48] : requesting options:/phoodo/api/user with []
+[18-02-02 10:54:48] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:54:48] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:55:32] : requesting options:/phoodo/api/user with []
+[18-02-02 10:55:32] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:56:11] : requesting options:/phoodo/api/user with []
+[18-02-02 10:56:11] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:56:11] : Api error handler: mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead [/opt/lampp/htdocs/renoir_engine/class_motor/consulta_mysql.class.php:22] 8192
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[18-02-02 10:56:36] : requesting options:/phoodo/api/user with []
+[18-02-02 10:56:36] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:56:36] : Api error handler: mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead (8192) [/opt/lampp/htdocs/renoir_engine/class_motor/consulta_mysql.class.php:22] 8192
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[18-02-02 10:57:02] : requesting options:/phoodo/api/user with []
+[18-02-02 10:57:02] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:57:02] : Api error handler ('.8192.'): mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead [/opt/lampp/htdocs/renoir_engine/class_motor/consulta_mysql.class.php:22] 8192
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[18-02-02 10:57:57] : requesting options:/phoodo/api/user with []
+[18-02-02 10:57:57] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:57:57] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:58:04] : requesting options:/phoodo/api/user with []
+[18-02-02 10:58:04] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:58:04] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:58:12] : requesting options:/phoodo/api/user with []
+[18-02-02 10:58:12] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 10:58:12] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 10:58:25] : requesting options:/phoodo/api/user with []
+[18-02-02 10:58:25] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 06:01:06] : requesting options:/phoodo/api/user with []
+[18-02-02 06:01:06] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 06:01:26] : requesting options:/phoodo/api/user with []
+[18-02-02 06:01:26] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 06:02:05] : requesting options:/phoodo/api/user with []
+[18-02-02 06:02:05] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 06:02:32] : requesting options:/phoodo/api/user with []
+[18-02-02 06:02:33] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 06:03:04] : requesting options:/phoodo/api/user with []
+[18-02-02 06:03:04] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 06:03:04] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 06:03:20] : requesting options:/phoodo/api/user with []
+[18-02-02 06:03:20] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 06:03:20] : email in use 409
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 06:03:52] : requesting options:/phoodo/api/user with []
+[18-02-02 06:03:53] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 06:04:52] : requesting options:/phoodo/api/user with []
+[18-02-02 06:04:52] : requesting post:/phoodo/api/user with [{"email":"dani@dani.com","pass":"1111"}]
+[18-02-02 06:11:12] : requesting get:/phoodo/api/api with []
+[18-02-02 06:18:07] : requesting get:/phoodo/api/api with []
+[18-02-02 06:23:29] : Something terrible happened in /opt/lampp/htdocs/phoodo/api.php 37 : Class 'SHIT_ON_YOUR_FACE' not found
+[18-02-02 06:23:44] : Something terrible happened in /opt/lampp/htdocs/phoodo/api.php 38 : Class 'SHIT_ON_YOUR_FACE' not found
+[18-02-02 07:29:28] : requesting get:/phoodo/api/api with []
+[18-02-02 07:30:18] : requesting options:/phoodo/api/user with []
+[18-02-02 07:30:18] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 07:30:19] : Something terrible happened in /opt/lampp/htdocs/phoodo/src/phoodo/api/api_user.class.php 8 : Class 'Phoodo\SHIT_ON_YOUR_FACE' not found
+[18-02-02 07:30:34] : requesting options:/phoodo/api/user with []
+[18-02-02 07:30:34] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 07:30:35] : Something terrible happened in /opt/lampp/htdocs/phoodo/src/phoodo/api/api_user.class.php 8 : Class 'Phoodo\SHIT_ON_YOUR_FACE' not found
+[18-02-02 07:32:07] : requesting options:/phoodo/api/user with []
+[18-02-02 07:32:07] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 07:32:07] : Something terrible happened in /opt/lampp/htdocs/phoodo/src/phoodo/api/api_user.class.php 8 : Class 'Phoodo\SHIT_ON_YOUR_FACE' not found
+[18-02-02 07:32:16] : requesting options:/phoodo/api/user with []
+[18-02-02 07:32:16] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 07:33:06] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 07:33:06] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"bb1d02f8e4cbd341bcc859f955294427"}]
+[18-02-02 07:33:06] : Api error handler (8): Undefined index: pass [/opt/lampp/htdocs/phoodo/src/phoodo/model/user.class.php:52] 8
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[18-02-02 07:41:40] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 07:41:40] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"bb1d02f8e4cbd341bcc859f955294427"}]
+[18-02-02 07:41:40] : Api error handler (8): Undefined index: pass [/opt/lampp/htdocs/phoodo/src/phoodo/model/user.class.php:54] 8
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[18-02-02 07:42:16] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 07:42:16] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"bb1d02f8e4cbd341bcc859f955294427"}]
+[18-02-02 07:42:16] : Array
+(
+    [verified] => 1
+)
+
+[18-02-02 07:42:16] : Api error handler (8): Undefined index: pass [/opt/lampp/htdocs/phoodo/src/phoodo/model/user.class.php:54] 8
+THAT WAS A BASIC EXCEPTION. THIS IS dispatcher FILE
+
+[18-02-02 07:43:09] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 07:43:09] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"bb1d02f8e4cbd341bcc859f955294427"}]
+[18-02-02 07:43:31] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 07:43:31] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"bb1d02f8e4cbd341bcc859f955294427"}]
+[18-02-02 07:43:31] : User already verified 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 07:44:00] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 07:44:00] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"bb1d02f8e4cbd341bcc859f955294427"}]
+[18-02-02 07:44:00] : User already verified 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 07:44:24] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 07:44:24] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"bb1d02f8e4cbd341bcc859f955294427"}]
+[18-02-02 07:44:24] : User already verified 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 08:02:02] : requesting options:/phoodo/api/user with []
+[18-02-02 08:02:02] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 08:02:26] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 08:02:26] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"4e502d9b21ddeb0d8da589b1cb4a2fb1"}]
+[18-02-02 08:03:22] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 08:03:22] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"4e502d9b21ddeb0d8da589b1cb4a2fb1"}]
+[18-02-02 08:03:22] : User already verified 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 08:03:44] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 08:03:44] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"4e502d9b21ddeb0d8da589b1cb4a2fb1"}]
+[18-02-02 08:03:44] : User already verified 400
+THAT WAS AN APP_EXCEPTION. THIS IS api.php FILE
+
+[18-02-02 08:05:21] : requesting options:/phoodo/api/user with []
+[18-02-02 08:05:21] : requesting post:/phoodo/api/user with [{"email":"marlborometal@gmail.com","pass":"1234"}]
+[18-02-02 08:05:44] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 08:05:44] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"80147d13512e7427752cb805e9734ddc"}]
+[18-02-02 08:09:33] : requesting options:/phoodo/api/user_verify with []
+[18-02-02 08:09:33] : requesting post:/phoodo/api/user_verify with [{"email":"marlborometal@gmail.com","verification_code":"80147d13512e7427752cb805e9734ddc"}]

@@ -48,8 +48,7 @@ class User extends \Contenido_bbdd
 	public function update(&$input=null)
 	{	
 		if(!$input) throw new \Exception("Unable to update database entity without input");
-
-		$input['pass']=md5($input['pass']);
+		if(isset($input['pass'])) $input['pass']=md5($input['pass']);
 
 		return parent::base_modificar($input);
 	}

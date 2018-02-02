@@ -32,7 +32,7 @@ class Response
 
 class CorsResponse extends Response {
 
-	public function __construct($_b, $_c, $_ct=Definitions::TYPE_JSON) {
+	public function __construct($_b=null, $_c=null, $_ct=Definitions::TYPE_JSON) {
 		parent::__construct($_b, $_c, $_ct);
 	}
 

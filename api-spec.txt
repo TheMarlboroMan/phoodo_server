@@ -39,10 +39,11 @@ user_verify
 	POST	
 		description: performs user email verification.
 		prerequisites: the user exists, is unverified and the verification code is correct.
-		aftermath: the user becomes verified and ready to use.
+		aftermath: the user becomes verified and ready to use. result should be 1.
 
 		in:	{email, verification_code}
 		out:	{result}
+		error:	400:{} (any missing or invalid parameter).
 
 user_login
 	POST

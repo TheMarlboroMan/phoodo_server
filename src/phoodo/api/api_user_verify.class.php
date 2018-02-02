@@ -5,6 +5,8 @@ class Api_user_verify extends \Rest_api\Resource implements \Rest_api\Api_post
 {
 	public function post($_input, \Rest_api\Request_headers $headers, array $get)
 	{
+		database_connect();
+
 		$input=\Rest_api\json_input_parse($_input, ['email', 'verification_code']);
 
 		if(!$input['email'] || !$input['verification_code'])
@@ -29,6 +31,10 @@ class Api_user_verify extends \Rest_api\Resource implements \Rest_api\Api_post
 		}
 
 		$user->verify();
+
+		$email=new Email();
+		$email->build_welcome_email($user);
+		$email->send();
 
 		return new \Rest_api\Response(json_encode(["result" => 1]), \Rest_api\Definitions::STATUS_CODE_OK);
 	}
